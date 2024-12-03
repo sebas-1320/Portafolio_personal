@@ -1,0 +1,381 @@
+*{
+    /* background-color: #040D12; */
+    --primary-color:  #044343;
+    --secundari-color: #045757;
+    --third-color:#93B1A6;
+    --quarter-color:#EEEEEE;
+    --fodo1:#040D12;
+    --fondo2:#EEEEEE;
+}
+/* Inicio */
+header{
+    padding-top: 150px;
+    background: var(--fodo1);
+    padding: 150px 0 100px;
+}
+#inicio{
+    position: relative;
+}
+nav.portafolio{
+    background: var(--primary-color);
+    position: fixed;
+    width: 100%;z-index: 999;
+    padding:20px 0 ;
+    top: 10px;
+    text-decoration: none;
+}
+#inicio h1{
+    color: var(--secundari-color);
+    font-size: 50px;
+}
+#inicio h2{
+    color: var(--secundari-color);
+    font-size: 35px;
+}
+#inicio a{
+    color: var(--quarter-color);
+    font-size: 15px;
+}
+#inicio p{
+    color: var(--quarter-color);
+    font-size: 20px;
+}
+#inicio .cont-info p b{
+    color: var(--third-color);
+}
+nav.navbar-brand img{
+    width: 200px;
+    width: 100%;
+}
+header::before{
+    position: absolute;
+    content: "";
+    width: 400px;
+    height: 350px;
+    background-color: #045757;
+    position: absolute;
+    bottom: 100px;
+    right: 56%;
+    z-index: 0;
+    border-radius: 30px;
+}
+nav.cont-foto{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    background-color: red;
+}
+nav.portafolio ul li{
+    margin-top: 14px;
+}
+nav.portafolio ul li a {
+    color: var(--quarter-color);
+    position: relative;
+    font-size: 20px;
+    margin: 0 12px;
+}
+nav.portafolio ul li a:hover{
+    color: var(--third-color);
+    background: var(--fodo1);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+#inicio article{
+    margin-top: 30px;
+}
+#inicio .iconos{
+    padding: 0 8px 20px;
+}
+#inicio i{
+    font-size: 30px;
+    color: var(--quarter-color);
+    margin: 0 5px;
+    transition: 1s;
+}
+#inicio i:hover{
+    color: var(--third-color);
+    transition: 0.5s;
+}
+/* Perfil */
+#perfil{
+    background: var(--fondo2);
+    padding: 50px 0 100px;
+}
+#perfil h2{
+    color: var(--primary-color);
+    font-size: 40px;
+}
+#perfil h3{
+    color: var(--secundari-color);
+    font-size: 30px;
+}
+#perfil p{
+    color: var(--fodo1);
+    font-size: 20px;
+}
+
+/*  Habilidades */
+#habilidades{
+    background: var(--fodo1);
+    padding: 50px 0 100px;
+    width: 100%;
+    position: relative;
+}
+#habilidades .info-habilidades{
+    width: 60%;
+}
+#habilidades .info-habilidades h3{
+    color: var(--quarter-color);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+#habilidades .info-habilidades h3 b{
+    color: var(--primary-color);
+}
+#habilidades .info-habilidades p{
+    color: var(--quarter-color);
+    font-size: 18px;
+    font-weight: 400;
+}
+#habilidades .fila .cards{
+    width: 30%;
+    max-width: 400px;
+    padding: 50px;
+    box-shadow: 2px 8px 8px 2px var(--primary-color);
+    margin-top: 50px;
+    border-bottom: 4px solid var(--primary-color);
+    background: #ffffff;
+    position: relative;
+    justify-content: space-around
+}
+#habilidades .fila .cards::after{
+    width: 0;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left:0;
+    top: 0;
+    background: url(../img/codigo.png);
+    opacity: 30% var(--second-color);
+    z-index: 1;
+    transition: .4s;
+}
+#habilidades .fila .cards:hover:after{
+width:100%;
+}
+#habilidades .fila .cards:hover h4,
+#habilidades .fila .cards:hover p,
+#habilidades .fila .cards:hover li{
+    color: var(--quarter-color);
+}
+#habilidades .fila .cards img{
+    width: 60px;
+    z-index: 9;
+    position: relative;
+}
+#habilidades .fila .cards h4{
+    font-size: 25px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    z-index: 9;
+    position: relative;
+}
+#habilidades .fila .cards p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 9;
+    position: relative;
+}
+#habilidades .fila .cards ul{
+    padding-left: 20px;
+    margin-top: 14px;
+    z-index: 9;
+    position: relative;
+}
+#habilidades .fila .card ul li{
+    margin: 10px 0;
+    font-weight: 400;
+    z-index: 9;
+    position: relative;
+}
+
+/* CSS  Portafolio */
+#portafolio{
+    width: 100%;
+    background: var(--fondo2);
+    position: relative;
+    padding: 50px 0 50px;
+    text-align: center;
+}
+#portafolio h2{
+    color: var(--primary-color);
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+    font-size: 40px;
+}
+#portafolio p{
+    color: var(--fodo1);
+    font-size: var(--fontSize-parrafos);
+    font-size: 30px;
+}
+#portafolio .row{
+    padding-top: 70px;
+}
+#portafolio .card-services{
+    background: #292c36;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    text-align: left;
+    transition: .4s;
+    max-width: 280px;
+    margin:0 auto ;
+    margin-bottom: 70px;
+}
+#portafolio .card-services:hover{
+    background: var(--primary-color);
+}
+#portafolio .card-services img{
+    background: #87b3a3;
+    width: 125px;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+}
+#portafolio .card-services h3{
+    color: var(--quarter-color);
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 15px ;
+}
+#portafolio .card-services p{
+    font-size: 15px;
+    color: var(--quarter-color);
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 15px;
+
+}
+#portafolio .card-services p{
+    color: var(--quarter-color);
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--third-color);
+}
+
+/* clases estudios */
+#estudios{
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    background: var(--fodo1);
+    background-size: cover;
+}
+#estudios h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+#estudios .fila{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+#estudios article{
+    margin: 0 40px;
+    position: relative;
+}
+#estudios article h3{
+    position: relative;
+    text-align: center;
+    color: var(--quarter-color);
+}
+/* clases hobbies */
+#hobbies{
+    background: var(--fondo2);
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding: 100px 0 100px;
+}
+#hobbies h2{
+    font-size: var(--fontSize-title);
+    color: var(--quarter-color);
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+#hobbies .card-destacadas{
+    border-radius: 4px;
+    position: relative;
+}
+#hobbies .card-hobbies img{
+    width: 100%;
+}
+#hobbies .card-hobbies .cont-info{
+    background: #292c36;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    transition: .4s ;
+}
+#hobbies .card-hobbies .cont-info:hover{
+    background: var(--primary-color);
+}
+.card-hobbies .cont-info h3{
+    font-size:20px ;
+    color: var(--quarter-color);
+    font-weight: 600;
+}
+.card-hobbies .cont-info p{
+    color: var(--quarter-color);
+    font-size: 16px;
+}
+#habilidades #tarjetas-container{
+    display: flex;
+    justify-content: center;
+    gap: 0 50px;
+}
+
+/* vercion responsive table */
+@media  screen and (min-width: 768px) and (max-width: 1024px){
+
+    section{
+        width: 100%;
+    }
+    
+    section .fila article{
+        width: 100%;
+    }
+    section .fila2 article{
+        width: 40%;
+        margin-bottom: 40px;
+    }
+}
+
+/* vercion responsive celular */
+@media  screen and (min-width: 430px) and (max-width: 932px){
+    section{
+        width: 100%;
+    }
+    section .fila article{
+        width: 100%;
+    }
+    section .fila2 article{
+        width: 88%;
+        margin: 0 auto 40px;
+    }
+}
